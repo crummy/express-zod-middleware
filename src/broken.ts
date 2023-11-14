@@ -1,4 +1,4 @@
-import {createMiddleware, defaultEndpointsFactory, MiddlewareDefinition} from "express-zod-api";
+import {createMiddleware, defaultEndpointsFactory} from "express-zod-api";
 import { z } from "zod";
 
 const middlewareA = createMiddleware({
@@ -10,7 +10,7 @@ const middlewareA = createMiddleware({
     },
 })
 
-const middlewareB: MiddlewareDefinition<any, any, any, any> = createMiddleware({
+const middlewareB = createMiddleware({
     input: z.object({}),
     middleware: async ({ options }) => {
         console.log(`this is typed as a string: ${options.id}`)
