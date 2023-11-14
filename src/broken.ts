@@ -13,7 +13,7 @@ const middlewareA = createMiddleware({
 const middlewareB = createMiddleware({
     input: z.object({}),
     middleware: async ({ options }) => {
-        console.log(`this is typed as a string: ${options.id}`)
+        console.log(`this does not work because options is "any": ${options.id}`)
         return {
             ...options,
             something: "else",
