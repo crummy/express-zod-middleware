@@ -1,0 +1,20 @@
+{
+  "name": "express-zod-middleware",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "express-zod-api": "^14.2.0",
+    "ts-node": "^10.9.1",
+    "zod": "^3.22.4"
+  }
+}
